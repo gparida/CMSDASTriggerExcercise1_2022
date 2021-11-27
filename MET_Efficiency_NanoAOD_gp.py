@@ -40,6 +40,6 @@ class TrigMETAnalysis(Module):
 
 
 preselection=""
-files=["./prod2016Data_NANO.root"]
+files=["./New_NanoAOD_M4000.root"]
 p=PostProcessor(".",files,cut=preselection,branchsel=None,modules=[TrigMETAnalysis()],noOut=True,histFileName="histos_METTrigNanoAOD.root",histDirName="metTrigAnalyzerNanoAOD")
 p.run()
