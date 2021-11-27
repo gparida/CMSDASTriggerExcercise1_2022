@@ -20,7 +20,7 @@ Efficiency.SetMarkerSize(1.5)
 Efficiency.SetTitle("Trigger Efficiency")
 Efficiency.GetXaxis().SetTitle("p_{T}^{Miss}(GeV)")
 Efficiency.GetYaxis().SetTitle("Trigger Efficiency")
-Efficiency.GetYaxis().SetRange(0,1.4) 
+Efficiency.GetYaxis().SetRange(0,2) 
 
 legend = ROOT.TLegend(0.4412607,0.1932773,0.8223496,0.4453782)
 legend.SetFillStyle(1001)
