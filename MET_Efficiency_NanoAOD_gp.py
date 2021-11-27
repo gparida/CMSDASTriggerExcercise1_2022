@@ -29,8 +29,8 @@ class TrigMETAnalysis(Module):
         refAccept = hlt.Ele27_eta2p1_WPTight_Gsf
         sigAccept = hlt.PFMET170_HBHECleaned
         self.h_passreftrig.Fill(refAccept)
-        #if not refAccept:
-           # return False
+        if not refAccept:
+           return False
 
         self.h_met_all.Fill(met.pt)
         if sigAccept:
