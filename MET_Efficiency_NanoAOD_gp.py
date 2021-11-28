@@ -16,8 +16,8 @@ class TrigMETAnalysis(Module):
     def beginJob(self,histFile=None,histDirName=None):
         Module.beginJob(self,histFile,histDirName)
         self.h_passreftrig  = ROOT.TH1F("h_passreftrig" , "; passed ref trigger" , 2 , 0. , 2. )
-        self.h_met_all      = ROOT.TH1F("h_met_all" , "; E_{T}^{miss} [GeV]" , 15, 100., 450 )
-        self.h_met_passtrig = ROOT.TH1F("h_met_passtrig" , "; E_{T}^{miss} [GeV]" , 15, 100., 450)
+        self.h_met_all      = ROOT.TH1F("h_met_all" , "; E_{T}^{miss} [GeV]" , 20, 100., 500 )
+        self.h_met_passtrig = ROOT.TH1F("h_met_passtrig" , "; E_{T}^{miss} [GeV]" , 20, 100., 500)
         self.addObject(self.h_passreftrig )
         self.addObject(self.h_met_all )
         self.addObject(self.h_met_passtrig )
